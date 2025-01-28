@@ -24,7 +24,7 @@ st.title("Speech to Text: Story Transcriptions")
 
 uploaded_file = st.file_uploader("Upload an audio file", type=["mp3", "wav", "m4a"])
 
-model = st.selectbox("Choose Whisper Model", ["tiny", "base", "medium"])
+model = st.selectbox("Choose Whisper Model", ["tiny", "base"])
 language = st.selectbox("Choose Language", ["en", "hi"])   
 words_input = st.text_area(
     "Enter each prompt word on a new line:",
